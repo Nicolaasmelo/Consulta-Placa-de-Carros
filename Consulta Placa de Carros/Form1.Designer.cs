@@ -34,6 +34,7 @@
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lstbox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -62,7 +63,7 @@
             // 
             // btnRelatorio
             // 
-            this.btnRelatorio.Location = new System.Drawing.Point(279, 189);
+            this.btnRelatorio.Location = new System.Drawing.Point(336, 245);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Size = new System.Drawing.Size(110, 38);
             this.btnRelatorio.TabIndex = 3;
@@ -88,11 +89,21 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Placa";
             // 
+            // lstbox
+            // 
+            this.lstbox.FormattingEnabled = true;
+            this.lstbox.ItemHeight = 15;
+            this.lstbox.Location = new System.Drawing.Point(226, 76);
+            this.lstbox.Name = "lstbox";
+            this.lstbox.Size = new System.Drawing.Size(220, 139);
+            this.lstbox.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 398);
+            this.ClientSize = new System.Drawing.Size(494, 301);
+            this.Controls.Add(this.lstbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRelatorio);
@@ -114,5 +125,6 @@
         private Button btnRelatorio;
         private Label label1;
         private Label label2;
+        private ListBox lstbox;
     }
 }
